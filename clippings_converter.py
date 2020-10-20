@@ -15,5 +15,6 @@ for i in range(len(clippings_lines) / 5):
     
     excerpts.append(excerpt_dict)
     
-    print(excerpt_dict["excerpt"])
-    print("Page " + excerpt_dict["page"] + ", " + excerpt_dict["title_author"] + "\n")
+for excerpt in excerpts:
+    print("\"" + excerpt["excerpt"] + "\"")
+    print("-- Page " + excerpt["page"] + ", " + excerpt["title_author"] + "\n")
